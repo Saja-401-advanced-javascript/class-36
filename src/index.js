@@ -17,6 +17,5 @@ function Main() {
         </>
   );
 }
-//https://github.com/Saja-401-advanced-javascript/class-36
 
 ReactDOM.render(<Main />, document.getElementById('root'));

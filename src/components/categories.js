@@ -1,48 +1,32 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { changeSelected } from '../store/categories.js';
+import { chooseList } from '../store/products.js';
 
+const status = props => {
+  console.log('ddddd', props.current);
+    
+  return (
+        <>
+            <h2>{props.current.current}</h2>
 
-import { activate, reset } from '../store/categories.js';
+            {props.current.categories.map((val, idx) => {
+              return <button key={idx} onClick={() => {
+                props.changeSelected(val);
+                props.chooseList(val);
+              }} className='category'>
+                {val}
+              </button>;
+            })}
+        </>
+  );
+};
 
-const RenderCategories = props => {
-    // console.log('props in components',props);
+const mapStateToProps = state => {
+  return {current:state.selector};
+};
 
-    return (
-        <section>
-            <ul>
-                {props.counter.categories.map(category => {
+const mapDespatchToProps = {changeSelected, chooseList};
 
-                    // console.log('category', props.counter.products);
-
-                    return <li onClick={() => props.activate(category.displayName)}
-                        key={category.displayName}
-                        onDoubleClick={props.reset}>
-                        {category.displayName}
-                    
-                        <li className="span">
-                            {category.span}
-                        </li>
-                        <li className="span">
-                            {category.spans}
-                        </li>
-
-      
-                     
-                   
-                    </li>
-                })}
-            </ul>
-       
-
-        </section>
-    )
-}
-
-const mapStateToProps = state => ({
-    counter: state.counter
-})
-
-const mapDispatchToProps = { activate, reset };
-
-export default connect(mapStateToProps, mapDispatchToProps)(RenderCategories);
+export default connect(mapStateToProps, mapDespatchToProps)(status);
 

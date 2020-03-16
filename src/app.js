@@ -6,16 +6,18 @@ import Products from './components/products.js';
 import './style.scss';
 
 class App extends React.Component {
-    render() {
-        return (
+    
+  render() {
+    console.log('eeeeeeeeeee');
+    return (
             <>
             <Header />
-            {/* <Categories />  */}
+            <Categories /> 
             <Products />           
             <Footer />
             </>
-        )
-    }
+    );
+  }
 }
 
-export default App
+export default App;

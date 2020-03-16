@@ -1,7 +1,43 @@
-.span{
-    list-style-type: none;
-}
+body {
+    text-align: center;
+    border: solid rgb(197, 218, 11);
+    width: 500px;
+    height: 600px;
+    margin-left: 30%;
+    background-color: #cccccc;
+  background-image: linear-gradient(rgb(11, 2, 51), rgb(154, 41, 247));
 
-.showed{
-    background-color: red;
+   
+ 
+    
+    
+    // height: 400px;
+    h1{
+        font-size: 50px;
+        color: rgb(250, 9, 9);
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .category{
+        margin:5px;
+        width: 70px;
+        height: 35px;
+        font-weight: bold;
+        &:hover {
+            background:  rgb(250, 9, 9);
+            color: #fff
+        }
+    }
+
+    .list{
+        list-style: none;
+        font-size: 20px;
+        margin-top: 10px;
+        color: greenyellow;
+       
+    }
+
 }

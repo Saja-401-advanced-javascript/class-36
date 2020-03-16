@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,11 @@
   "bugs": {
     "url": "https://github.com/Saja-401-advanced-javascript/class-36/issues"
   },
-  "homepage": "https://github.com/Saja-401-advanced-javascript/class-36",
+  "homepage": "/",
   "dependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

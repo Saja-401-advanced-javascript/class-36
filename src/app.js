@@ -13,9 +13,9 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Cart />
         <Categories />
         <Products />
+        <Cart />
         <Footer />
       </>
     );

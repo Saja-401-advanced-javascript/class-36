@@ -7,7 +7,7 @@ const status = props => {
   console.log('ddddd', props.current);
     
   return (
-        <>
+        <section >
             <h2>{props.current.current}</h2>
 
             {props.current.categories.map((val, idx) => {
@@ -18,7 +18,7 @@ const status = props => {
                 {val}
               </button>;
             })}
-        </>
+        </section>
   );
 };
 

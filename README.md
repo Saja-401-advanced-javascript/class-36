@@ -1,6 +1,6 @@
 #  LAB - Class 36
 
-## Application State with Redux
+## Redux - Combined Reducers
 
 ### Author: Saja Swalgah
 
@@ -19,4 +19,4 @@
 
 #### UML
 
-![](img/class36.jpg)
+![](img/class37.jpg)

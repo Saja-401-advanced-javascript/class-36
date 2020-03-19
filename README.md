@@ -6,8 +6,8 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/Saja-401-advanced-javascript/class-36/pull/3)
-- [Netlify Deploy](https://keen-wilson-09515f.netlify.com/)
+- [submission PR](https://github.com/Saja-401-advanced-javascript/class-36/pull/4)
+- [Netlify Deploy](https://nostalgic-poitras-c22e77.netlify.com/)
 
 
 
